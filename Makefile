@@ -33,4 +33,4 @@ $(PROJ): $(OBJS)
 
 clean:
 	rm -f $(PROJ)
-	rm -f $(SRCS:.c=.o)
+	rm -f $(OBJS)
