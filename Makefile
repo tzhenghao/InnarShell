@@ -2,13 +2,13 @@
 CC = gcc
 
 # Project name.
-PROJ = fork_demo
+PROJ = innarshell
 
 # Source files.
-SRCS = fork_demo.c
+SRCS = innarshell.c
 
 # Object files.
-OBJS = fork_demo.o
+OBJS = innarshell.o
 
 # Warnings flags.
 CFLAGS = -Wshadow -Wall -Wpedantic -Wextra
@@ -17,10 +17,9 @@ CFLAGS = -Wshadow -Wall -Wpedantic -Wextra
 CFLAGS+= -g
 
 # Optimization flags.
-#CFLAGS+= -Ofast -march=native -flto -Wdouble-promotion
+#CFLAGS+=
 
 # Linker flags.
-#LDFLAGS = -lm -lSDL2
 LDFLAGS = -lreadline
 
 # Linker.
@@ -31,6 +30,7 @@ $(PROJ): $(OBJS)
 %.o : %.c
 	$(CC) $(CFLAGS) -o $@ -c $<
 
+.PHONY: clean
 clean:
 	rm -f $(PROJ)
 	rm -f $(OBJS)
