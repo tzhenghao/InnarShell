@@ -5,4 +5,4 @@ A minimal shell written in C. This was inspired by Indrahanush's [blog series](h
 Run `make` at the top level, then `./innarshell`.
 
 ## Support
-Please feel free to reach out to [me](hi@zhenghaotan.com) if you have questions/concerns.
+Please feel free to reach out to me if you have questions/concerns.
